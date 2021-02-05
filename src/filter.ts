@@ -6,10 +6,10 @@ const name = "vuepress-plugin-post-filter"
 export const postFilter: Plugin = (options: PostFilterOptions, app) => {
   const {
     frontmatter = { draft: true, published: false },
-    productionOnly = true,
+    prodOnly = true,
   } = options
 
-  return productionOnly && app.env.isProd
+  return prodOnly && app.env.isProd
     ? { name }
     : {
         name,
