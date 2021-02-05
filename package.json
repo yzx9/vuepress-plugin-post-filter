@@ -1,7 +1,7 @@
 {
   "name": "vuepress-plugin-post-filter",
   "version": "1.0.0",
-  "description": "Post filter for vuepress-next",
+  "description": "Post filter plugin for vuepress-next",
   "keywords": [
     "vuepress-plugin",
     "vuepress",

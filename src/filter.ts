@@ -1,9 +1,9 @@
 import type { Page, Plugin } from "@vuepress/core"
-import { DraftFilterOptions } from "./type"
+import { PostFilterOptions } from "./type"
 
-const name = "vuepress-plugin-draft-filter"
+const name = "vuepress-plugin-post-filter"
 
-export const draftFilter: Plugin = (options: DraftFilterOptions) => {
+export const postFilter: Plugin = (options: PostFilterOptions) => {
   const {
     frontmatter = { draft: true, published: false },
     productionOnly = true,
@@ -26,4 +26,4 @@ export const draftFilter: Plugin = (options: DraftFilterOptions) => {
       }
 }
 
-export default draftFilter
+export default postFilter

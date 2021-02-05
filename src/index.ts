@@ -1,5 +1,5 @@
-import { draftFilter } from "./filter"
+import { postFilter } from "./filter"
 
-export { DraftFilterOptions } from "./type"
-export { draftFilter }
-export default draftFilter
+export { PostFilterOptions } from "./type"
+export { postFilter }
+export default postFilter
