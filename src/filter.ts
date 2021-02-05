@@ -3,13 +3,13 @@ import { PostFilterOptions } from "./type"
 
 const name = "vuepress-plugin-post-filter"
 
-export const postFilter: Plugin = (options: PostFilterOptions) => {
+export const postFilter: Plugin = (options: PostFilterOptions, app) => {
   const {
     frontmatter = { draft: true, published: false },
     productionOnly = true,
   } = options
 
-  return productionOnly && process.env.NODE_ENV !== "production"
+  return productionOnly && app.env.isProd
     ? { name }
     : {
         name,
