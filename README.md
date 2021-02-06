@@ -43,7 +43,7 @@ export default {
           draft: true,
           published: false
         },
-        productionOnly: true,
+        prodOnly: true,
       }
     ]
   ]
