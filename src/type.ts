@@ -1,4 +1,4 @@
 export interface PostFilterOptions {
-  frontmatter: Record<string, boolean>
-  prodOnly: boolean
+  frontmatter?: Record<string, boolean>
+  prodOnly?: boolean
 }
